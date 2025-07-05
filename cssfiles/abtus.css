@@ -1,0 +1,513 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "fira sans";
+}
+
+.aboutuswrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.pg-01 {
+    width: 100%;
+    height: 100%;
+}
+
+.ab-sub-heads {
+    display: inline-block;
+    margin: 1.6% 0 0.8% 4.5%;
+
+}
+
+#head {
+    color: #000524;
+    width: fit-content;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "FIRA SANS";
+}
+
+#sub-head {
+    color: #000524;
+    width: fit-content;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.ab-pg-01-img-dv {
+    background-color: #a1a1e6;
+    width: 90%;
+    height: 85.5%;
+    margin: 2% 2% 10% 4.5%;
+    border-radius: 0.6%;
+
+}
+
+#ab-pg-01-img {
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6%;
+}
+
+.ab-pg-02 {
+    height: fit-content;
+    width: 100%;
+    margin: 8% 0 0% 0;
+    padding: 0 0 1% 0;
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.projectswrapper {
+    height: fit-content;
+    width: 100%;
+}
+
+.overlay-h2-tg {
+    z-index: 2;
+    position: absolute;
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    top: 47%;
+    left: 19.5%;
+
+}
+
+#ovrly-h2 {
+    z-index: 2;
+    position: absolute;
+    width: 47%;
+    font-family: "FIRA SANS";
+    font-weight: 700;
+    font-size: 69px;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+
+.text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* bottom: 10%; */
+    left: 4.3%;
+}
+@media screen and (min-width:700px) and (max-width:1346px) {
+    .overlay-h2-tg {
+    z-index: 2;
+    position: absolute;
+    display: inline-block;
+    width: 68%;
+    margin: 0;
+    padding: 0;
+    top: 47%;
+    left: 10%;
+
+}
+
+#ovrly-h2 {
+    z-index: 2;
+    position: absolute;
+    width: 47%;
+    font-family: "FIRA SANS";
+    font-weight: 700;
+    font-size: 69px;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+
+.text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* bottom: 10%; */
+    left: 4.3%;
+}
+}
+
+.text-slide.active {
+    top: 0%;
+    left: 48%;
+    z-index: 2;
+    position: absolute;
+    width: 68%;
+    font-family: "FIRA SANS";
+    font-weight: 700;
+    font-size: 69px;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+
+.text-slide {
+    display: none;
+    width: 68%;
+    font-family: "FIRA SANS";
+    font-weight: 700;
+    font-size: 69px;
+    color: white;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+
+.text-slide.active {
+    display: block;
+}
+
+#ab-sd-tx-htg{
+    text-align: center;
+    margin: 1.4% 0% 1.4% 0 ;
+    font-family: "KUMBH SANS";
+    font-size: 80px;
+    font-weight: 160;
+    color: rgb(0, 31, 68);
+    opacity: 100%;
+
+    opacity: 0;
+    transform: scale(0.4);
+    transition: opacity 0.9s ease, transform 0.6s ease;
+   
+}
+
+#ab-sd-tx-htg.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+#ab-sd-tx-htg:hover{
+    transition: 0.9s;
+    transform: scale(1.02); 
+}
+
+.project-pane {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.filters {
+    width: 18%;
+    padding: 4% 0 0 4%;
+    border-right: 0.2px solid rgb(141, 141, 141);
+    transform: translateY(0);
+}
+
+
+.filter-buttons button {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    text-decoration: none;
+    background-color: white;
+    border: none;
+    text-align: left;
+    font-family: "kumbh sans";
+    font-size: 19px;
+    padding: 6% 0 0 0;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.9s ease, transform 0.6s ;
+}
+
+.filter-buttons.show button{
+    opacity: 1;
+      transform: translateY(0);
+
+}
+
+
+
+.bt-p.active::after {
+    content: "";
+    border-bottom: 2px solid black;
+    transition: width 1s;
+}
+
+.bt-p:hover {
+    border-bottom: 1px solid black;
+    transition: width 0.3s;
+}
+
+#card-Container {
+    height: 100%;
+    width: 100%;
+}
+
+/* cards  */
+.card-box {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 0 0 0 2%;
+    margin-top: 2%;
+        opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.9s ease, transform 0.5s ;
+}
+
+.card-box.show{
+    opacity: 1;
+      transform: translateY(0);
+
+}
+
+
+.image-adjust {
+    height: 100%;
+    width: 32%;
+    border-radius: 2%;
+}
+
+.partition {
+    font-family: "KUMBH SANS";
+    display: block;
+    height: 100%;
+    width: 70%;
+    padding: 0 0 0 3%;
+}
+
+.card-button {
+    text-decoration: none !important;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    font-family: "kUMBH SANS";
+}
+
+.card-button:hover {
+    transition: 0.1s;
+    transform: scale(1.03);
+}
+
+
+/* CAROUSLE CODE ENDS  */
+.m-vision1 {
+    display: none;
+}
+.contact-refrals{
+    width: 100%;
+    height: 5%;
+    background-color: #000070;
+}
+.fotter-main {
+    width: 100%;
+    height: 100%;
+    background-color: #a5cfff;
+    padding: 2.6% 0 0 0 ;
+}
+
+.fotter-upper {
+    display: flex;
+    height: 30%;
+    width: 80%;
+    margin: 0 0 0 10%;
+    overflow: hidden;
+    border-bottom: 3.5px solid rgb(83, 83, 83);
+    /* background-color: yellow; */
+}
+
+#fm-social {
+    text-align: center;
+    height: 100%;
+    width: 30%;
+    /* background-color: orange; */
+    margin: 0 0 0 10%;
+    padding: 1% 0 0 0;
+
+}
+
+.ft-sc-anchor {
+    text-decoration: none;
+    color: black;
+}
+
+#fm-sc-h2 {
+    font-family: "kumbh sans";
+    text-align: center;
+}
+
+.ft-sc-h6 {
+    font-size: 19px;
+    font-weight: 400;
+}
+
+#ft-lg-main {
+    margin: 18% 0 0 0;
+    height: 60;
+}
+
+.side-nav-btn {
+    margin: 4% 0 0 5%;
+}
+
+.side-btn {
+    width: 100%;
+    margin: 5% 0 0 0%;
+    background-color: #192d44;
+    font-family: "kumbh sans";
+    color: white;
+    border-radius: 5%;
+    border: none;
+    height: 20%;
+}
+.fotter-mid{
+    display: flex;
+    height: 40%;
+    /* background-color: orange; */
+    padding: 0 0 0 0%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% 10% 1% 10%;
+    padding: 0 7% 0 7%;
+    border-bottom: 3.5px solid rgb(83, 83, 83);
+}
+#lower{
+    height: fit-content;
+}
+.ref-list{
+    display: block;
+    /* background-color: black; */
+    margin: 0 0 0 0%;    
+  
+}
+.lower-ref-h6 {
+    font-family: "kumbh sans";
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+    margin: 0% 0 0 0;
+}
+.lower-ref-p{
+    width: 90%;        
+    }
+#lwr-rf{
+    margin: 20% 0 0 0;
+}
+#rl-3{
+    margin: 1% 0 0 0;
+}
+#rl-2{
+    margin: 1% 0 0 0;
+}
+#lower{
+    border: none;
+}
+
+@media screen and (max-width: 800px) {
+
+    .projectswrapper,
+    .project-pane,
+    .projects-container,
+    .fotter {
+        display: none;
+    }
+
+    .m-vision1 {
+        display: block;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .carousel-slider {
+        position: relative;
+    }
+
+    #eagleMobileCarousel {
+        position: relative;
+    }
+
+    .ovrly {
+        position: absolute;
+        background-color: white;
+        height: 30%;
+        width: 89%;
+        top: 80%;
+        margin-left: 5%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ovrly-text {
+        font-size: 40px;
+        font-family: "KUMBH SANS";
+        font-weight: 500;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    #ovrl-h3 {
+        margin-top: 0;
+        font-size: 16px;
+    }
+
+    .infoheads {
+        text-align: center;
+        margin: 5% 1% 5% 0%;
+        font-family: "KUMBH SANS";
+        font-size: 60px;
+        width: fit-content;
+        font-weight: 200;
+        color: rgb(0, 50, 107);
+    }
+
+    .info-cards {
+        margin-top: 9%;
+        position: relative;
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 16%;
+    }
+
+    .cards-box {
+
+        margin: 0 0 0 2%;
+        height: 68%;
+        box-shadow: 0 0 3px black;
+        width: 95%;
+
+    }
+
+    .card-img {
+        display: block;
+        height: 48%;
+    }
+
+    .btm-info-heads {
+        font-weight: 600;
+        font-family: "KUMBH SANS";
+        font-size: 35px;
+        padding: 3% 0 1% 1%;
+    }
+
+    .btm-info-sbh {
+        font-family: "KUMBH SANS";
+        font-size: 21px;
+        padding: 0 0 1% 1%;
+    }
+
+    .btm-info-p {
+        font-size: 18px;
+        font-family: "KUMBH SANS";
+        padding: 0 0 1% 1%;
+
+    }
+
+}

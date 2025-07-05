@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="cssfiles/style.css">
+    <link rel="stylesheet" href="cssfiles/abtus.css">
+
+    <!-- Bootstrap 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts (Fira Sans, Kumbh Sans, DM Serif Text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Fira+Sans:ital,wght@0,100..900;1,100..900&family=Kumbh+Sans:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/logo-removebg-preview1 - Copy.png" type="image/x-icon">
+
+    <!-- JS -->
+    <script src="script.js"></script>
+    <title>Eagle Infra India | Verticals </title>
+</head>
+<style>
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+        margin-top: 15%;
+        border-radius: 1.2% 0 10% 10%;
+        border: 0;
+        z-index: 1;
+        color: gray;
+        background-color: #f7f7f7;
+
+    }
+
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+
+        /* Removes default spacing */
+
+    }
+</style>
+
+<style>
+    /* Custom fade effect */
+    .carousel-item {
+        /* transition: 0.8s; */
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .carousel-inner .active {
+
+        opacity: 1 !important;
+    }
+
+    .carousel-item {
+        opacity: 0;
+    }
+
+    .carousel {
+        background-color: black;
+        height: 39rem;
+    }
+
+    .carousel-inner {
+        opacity: 80%;
+        height: 39rem;
+    }
+</style>
+
+<body>
+    <div class="contact-refrals" style="color: white; font-family: 'kumbh sans'; font-size: 17px;">
+        Connect With Us
+        <a target="_blank" href="https://www.linkedin.com/company/eagle-infra-india-limited/posts/?feedView=all"><i class="fa-brands fa-linkedin" style="color: #ffffff; 
+        margin: 0.5% 0 0 2%;"></i></a>
+        <a target="_blank" href="https://www.instagram.com/eaglethanestrikers/"><i class="fa-brands fa-instagram" style="color: #ffffff; 
+        margin: 0.5% 0 0 2%;"></i></a>
+        <a target="_blank" href="https://x.com/EagleInfra_ORR"><i class="fa-brands fa-twitter" style="color: #ffffff; 
+        margin: 0.5% 0 0 2%;"></i></a>
+        <a target="_blank" href="https://www.youtube.com/@eagleinfraindialtdtouching5776"><i class="fa-brands fa-youtube" style="color: #ffffff; 
+        margin: 0.5% 0 0 2%;"></i></a>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="height: 64px;">
+                <img src="img/logo-removebg-preview.png" alt="Logo" style="height: 65px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"
+                            style="padding-left: 2.3rem; font-weight: 600; color: black;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html"
+                            style="padding-left: 2.3rem; font-weight: 600; color: rgb(0, 0, 0);">About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle hover" href="project.html" id="navbar-Dropdown" role="button"
+                            style="padding-left: 2.3rem; font-weight: 600; color: black;">Verticals</a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#anchor-projects-ongoing">Ongoing Projects</a></li>
+                            <li><a class="dropdown-item" href="#anchor-projects-delivered">Delivered Projects</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clients.html"
+                            style="padding-left: 2.3rem; font-weight: 600; color: black;">Client's</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html"
+                            style="padding-left: 2.3rem; font-weight: 600; color: black;">Career's</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="enquiry.html"
+                            style="padding-left: 2.3rem; font-weight: 600;color: black;">Enquiry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html"
+                            style="padding-left: 2.3rem; font-weight: 600; color: black;">Contact Us</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- M-VISION FOR SMALLER SCREENS -->
+    <div class="m-vision1">
+        <!-- <div class="redirect">
+            <a id="home" href="index.html">Home</a>
+            <i class="fa-solid fa-greater-than"></i>
+            <a id="home" href="project.html">Verticals</a>
+        </div> -->
+        <div class="carousel-slider">
+            <div id="eagleMobileCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                style="height: 70vh;">
+                <div class="carousel-inner" style="height: 70vh;">
+                    <div class="carousel-item active">
+                        <img src="img/Paithan Road (2).webp" class="d-block w-100" alt="Slide 1"
+                            style="height: 100vh; object-fit: cover;">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/wtrimg.webp" class="d-block w-100" alt="Slide 2"
+                            style="height: 100vh; object-fit: cover;">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/metro.webp" class="d-block w-100" alt="Slide 3"
+                            style="height: 100vh; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ovrly active">
+                <h1 class="ovrly-text">Our Verticals</h1>
+                <h3 class="ovrly-text" id="ovrl-h3">Decades of Excellence Across Indias Core Development Sectors.</h3>
+            </div>
+        </div>
+        <div class="info-cards">
+            <h1 class="infoheads">Projects Delivered</h1>
+            <div class="cards-box">
+                <img class="card-img" src="img/staticimg1.webp" alt="">
+                <h1 class="btm-info-heads">Ludhiyana-Ladhowal</h1>
+                <h3 class="btm-info-sbh">Enhancing Connectivity in Ludhiana</h3>
+                <p class="btm-info-p"> The Laddowal Bypass project in Ludhiana, Punjab, spans 17.041 km, enhancing
+                    connectivity between NH-95 and NH-1 via the Laddowal Seed Farm. Developed under the Hybrid
+                    Annuity
+                    Model, it improves traffic flow and infrastructure.</p>
+            </div>
+        </div>
+        <div class="info-cards">
+            <div class="cards-box">
+                <img class="card-img" src="img/img5.webp" alt="">
+                <h1 class="btm-info-heads">Trichy-Madurai Highway</h1>
+                <h3 class="btm-info-sbh">Ensuring Smooth Connectivity & Road Safety on NH-45B</h3>
+                <p class="btm-info-p">The operation and maintenance of the Trichy Bypass to Tovaramkurchi-Madurai
+                    section of
+                    NH-45B focus on enhancing road quality, safety, and traffic efficiency. Managed under the OMT
+                    (Operate,
+                    Maintain, Transfer) model, this project ensures seamless travel and long-term infrastructure
+                    sustainability.</p>
+            </div>
+        </div>
+        <div class="info-cards">
+            <div class="cards-box">
+                <img class="card-img" src="img/staticimg1.webp" alt="">
+                <h1 class="btm-info-heads">Lokmanya Tilak Terminus</h1>
+                <h3 class="btm-info-sbh">Revamping LTT: A Gateway to Modern Travel</h3>
+                <p class="btm-info-p">The project involves the construction of a new station building complex and
+                    ancillary
+                    civil works at Lokmanya Tilak Terminus (LTT), Kurla. Aimed at improving passenger facilities and
+                    operational efficiency, this development will enhance connectivity and provide a better travel
+                    experience.</p>
+            </div>
+        </div>
+        <div class="info-cards">
+            <div class="cards-box">
+                <img class="card-img" src="img/cont.webp" alt="">
+                <h1 class="btm-info-heads">Vitva BhusavalKhamgaon Road SH-44 Upgrade</h1>
+                <h3 class="btm-info-sbh">Transforming Regional Connectivity Across Maharashtra</h3>
+                <p class="btm-info-p">This project reflects Eagle Infras deep-rooted commitment to enhancing
+                    interstate transport infrastructure. The SH-44 road upgrade connects vital trade and
+                    agricultural belts, enabling safer, faster travel. With technical expertise in highway
+                    strengthening and drainage planning, our team ensures long-lasting road performance that
+                    supports both economic and regional development goals.</p>
+            </div>
+        </div>
+
+        <div class="info-cards">
+            <div class="cards-box">
+                <img class="card-img" src="img/cont.webp" alt="">
+                <h1 class="btm-info-heads">Khamgaon Bypass Highway</h1>
+                <h3 class="btm-info-sbh">Decongesting Urban Roads Through Strategic Highway Design</h3>
+                <p class="btm-info-p">Designed to reduce inner-city traffic pressure, the Khamgaon Bypass is a prime
+                    example of our expertise in traffic flow engineering. Eagle Infra applied modern road planning
+                    standards and materials to ensure durability and safety. The project strengthens Eagle's
+                    reputation for building smart bypass routes that balance ecology, safety, and urban planning.
+                </p>
+            </div>
+        </div>
+
+        <div class="info-cards">
+            <div class="cards-box">
+                <img class="card-img" src="img/cont.webp" alt="">
+                <h1 class="btm-info-heads">Trichy–Madurai Highway Expansion</h1>
+                <h3 class="btm-info-sbh">Seamless Travel Across Tamil Nadu's Industrial Heartland</h3>
+                <p class="btm-info-p">A vital corridor between southern Tamil Nadu cities, this highway expansion
+                    improves freight and commuter movement drastically. With precision in road geometry, terrain
+                    handling, and safety integration, Eagle Infras experienced engineers deliver a road that meets
+                    NHAI benchmarks while reflecting our commitment to national logistics infrastructure.</p>
+            </div>
+        </div>
+
+        <div class="info-cards">
+            <div class="cards-box">
+                <img class="card-img" src="img/cont.webp" alt="">
+                <h1 class="btm-info-heads">Raipur Central Park Development</h1>
+                <h3 class="btm-info-sbh">Creating Public Spaces That Elevate Urban Living</h3>
+                <p class="btm-info-p">Blending civil engineering with sustainable landscaping, this project
+                    highlights Eagle Infras versatility beyond roads. Raipur Central Park is a showcase of modern
+                    urban design, featuring pathways, water features, and public utilities. Our experience in civic
+                    planning ensures the park is safe, accessible, and built to serve generations.</p>
+            </div>
+        </div>
+
+        <div class="info-cards">
+            <div class="cards-box">
+                <img class="card-img" src="img/Paithan Road (2).webp" alt="">
+                <h1 class="btm-info-heads">Pathan Road, Aurangabad</h1>
+                <h3 class="btm-info-sbh">Strengthening Last-Mile Road Access in Urban Pockets</h3>
+                <p class="btm-info-p">Pathan Road is an example of high-precision urban roadwork by Eagle Infra,
+                    executed in a densely populated area. The project involved upgrading drainage, road base layers,
+                    and surface durability. Our team applied decades of practical knowledge to ensure minimal
+                    disruption and long-term quality amidst complex site conditions.</p>
+            </div>
+        </div>
+
+        <div class="info-cards">
+            <div class="cards-box">
+                <img class="card-img" src="img/cont.webp" alt="">
+                <h1 class="btm-info-heads">LTT Station Building Complex</h1>
+                <h3 class="btm-info-sbh">Elevating Passenger Infrastructure at Mumbai's Key Terminal</h3>
+                <p class="btm-info-p">Eagle Infra proudly contributed to the modernization of Lokmanya Tilak
+                    Terminus by delivering a structurally sound, commuter-friendly building complex. Incorporating
+                    architectural planning, fire safety norms, and utility integration, the project reflects our
+                    ability to handle high-footfall infrastructure with precision and public accountability.</p>
+            </div>
+        </div>
+
+        <div class="info-cards">
+            <div class="cards-box">
+                <img class="card-img" src="img/cont.webp" alt="">
+                <h1 class="btm-info-heads">Four-Laning SH-24 to SH-198 Corridor</h1>
+                <h3 class="btm-info-sbh">Widening Roads for Future Traffic and Freight Demands</h3>
+                <p class="btm-info-p">The four-laning of this crucial corridor ensures smoother inter-district
+                    travel and freight movement. With expert pavement design, stormwater planning, and traffic
+                    safety features, Eagle Infra delivers on state-level mandates while maintaining construction
+                    quality and environmental compliance standards that stand the test of time.</p>
+            </div>
+        </div>
+        <h1 class="infoheads">Projects Ongoing</h1>
+        <div class="info-cards">
+            <div class="cards-box">
+                <img class="card-img" src="img/cont.webp" alt="">
+                <h1 class="btm-info-heads">Project Ludhiyana</h1>
+                <h3 class="btm-info-sbh">A Major Step in Punjabs Urban Infrastructure Expansion</h3>
+                <p class="btm-info-p">Eagle Infra's Ludhiyana Project enhances regional mobility through advanced
+                    road planning and timely execution. With deep experience in urban construction, our team ensures
+                    this development addresses both traffic decongestion and long-term sustainability. The project
+                    reflects our commitment to structured growth in one of North India's fastest-developing zones.
+                </p>
+            </div>
+        </div>
+
+        <div class="info-cards">
+            <div class="cards-box">
+                <img class="card-img" src="img/cont.webp" alt="">
+                <h1 class="btm-info-heads">Project Lokmanya Tilak Terminus</h1>
+                <h3 class="btm-info-sbh">Redefining Multimodal Connectivity in Mumbai</h3>
+                <p class="btm-info-p">This project enhances commuter experience and streamlines passenger flow at
+                    one of Mumbais busiest rail hubs. Eagle Infra's team integrated advanced civil and utility
+                    design to improve connectivity, safety, and station capacity. The LTT upgrade exemplifies our
+                    expertise in high-pressure urban transport infrastructure development.</p>
+            </div>
+        </div>
+
+        <div class="info-cards">
+            <div class="cards-box">
+                <img class="card-img" src="img/cont.webp" alt="">
+                <h1 class="btm-info-heads">Trichy Madurai Highway</h1>
+                <h3 class="btm-info-sbh">Boosting Economic Corridors in Tamil Nadu</h3>
+                <p class="btm-info-p">Eagle Infra delivers a reliable and future-ready road between Trichy and
+                    Madurai—an essential route for trade and travel. With extensive highway construction expertise,
+                    we ensured durable surface quality, proper drainage, and safety features. The project stands as
+                    a model of efficiency and technical competence.</p>
+            </div>
+        </div>
+
+        <div class="info-cards">
+            <div class="cards-box">
+                <img class="card-img" src="img/cont.webp" alt="">
+                <h1 class="btm-info-heads">NH-6 AmravatiChikli Section</h1>
+                <h3 class="btm-info-sbh">Strengthening a Vital Stretch of National Highway 6</h3>
+                <p class="btm-info-p">This section of NH-6 forms a core link for industrial freight and regional
+                    movement. Our team used high-grade materials and traffic-centric design to ensure uninterrupted
+                    operations during and after construction. It reinforces Eagle Infras role as a trusted name in
+                    national highway execution and management.</p>
+            </div>
+        </div>
+
+        <div class="info-cards">
+            <div class="cards-box">
+                <img class="card-img" src="img/cont.webp" alt="">
+                <h1 class="btm-info-heads">Sewage Facilities Bhivandi Nizampur City</h1>
+                <h3 class="btm-info-sbh">Modernizing Civic Utilities Through Smart Infrastructure</h3>
+                <p class="btm-info-p">With rising urban population in BhivandiNizampur, Eagle Infra delivered a
+                    comprehensive sewage system to manage waste efficiently. Engineered with long-term maintenance
+                    in mind, this project reflects our expertise in underground utilities, water flow design, and
+                    environmental safety compliance in urban zones.</p>
+            </div>
+        </div>
+
+        <div class="info-cards">
+            <div class="cards-box">
+                <img class="card-img" src="img/cont.webp" alt="">
+                <h1 class="btm-info-heads">Four-Laning Parshuram Ghat</h1>
+                <h3 class="btm-info-sbh">Safe Mountain Pass Access with Smart Road Expansion</h3>
+                <p class="btm-info-p">Parshuram Ghat's four-laning required a precise balance of geography, safety,
+                    and engineering. Our experienced hill-road team executed with specialized retaining, drainage,
+                    and slope safety solutions. This project demonstrates Eagle Infras expertise in difficult
+                    terrain roadworks with dependable results.</p>
+            </div>
+        </div>
+
+        <div class="info-cards">
+            <div class="cards-box">
+                <img class="card-img" src="img/cont.webp" alt="">
+                <h1 class="btm-info-heads">Water Supply Facilities – Shelgaon</h1>
+                <h3 class="btm-info-sbh">Delivering Safe Drinking Water Through Smart Distribution Design</h3>
+                <p class="btm-info-p">Eagle Infra developed water supply lines and filtration systems to serve the
+                    residents of Shelgaon with clean and consistent water access. With a focus on quality materials,
+                    flow optimization, and contamination control, the project reflects our dedication to rural
+                    infrastructure and public well-being.</p>
+            </div>
+        </div>
+
+        <div class="info-cards">
+            <div class="cards-box">
+                <img class="card-img" src="img/cont.webp" alt="">
+                <h1 class="btm-info-heads">Water Supply Facilities – Sangli</h1>
+                <h3 class="btm-info-sbh">Empowering Urban Health Through Clean Water Access</h3>
+                <p class="btm-info-p">This project involved laying high-capacity pipelines and integrated storage
+                    units to meet Sanglis growing water demand. Eagle Infra ensured precision in execution and
+                    tested all systems for flow efficiency and water safety. The initiative showcases our commitment
+                    to dependable civic infrastructure in expanding cities.</p>
+            </div>
+        </div>
+
+        <div class="m-fotter">
+            <h2 class="ft-details">Delivered Project's</h2>
+            <div class="partition">
+                <div class="sub-partition-1">
+                    <ul>
+                        <li><a class="clickable" href="project.html#hov-bx-h2-tg">
+                                <h3 class="clickable">Improvement of State border Vitva-Bhusaval Jamner Motala
+                                    Pimpalgaon Raja Khamgaon Road SH-44 Km.</h3>
+                            </a></li>
+                    </ul>
+                    <ul>
+                        <li><a class="clickable" href="project.html#hov-bx-h2-tg">
+                                <h3 class="clickable">Ludhiyana-Ladhowal Bypass Project</h3>
+                            </a></li>
+                    </ul>
+                    <ul>
+                        <li><a class="clickable" href="project.html#hov-bx-h2-tg2">
+                                <h3 class="clickable">Khamgaon Bypass Highway</h3>
+                            </a></li>
+                    </ul>
+                    <ul>
+                        <li><a class="clickable" href="project.html#hov-bx-h2-tg2">
+                                <h3 class="clickable">Trichy-Madurai Highway</h3>
+                            </a></li>
+                    </ul>
+                    <ul>
+                        <li><a class="clickable" href="project.html#hov-bx-h2-tg2">
+                                <h3 class="clickable">Raipur Central Park</h3>
+                            </a></li>
+                    </ul>
+                    <ul>
+                        <li><a class="clickable" href="project.html#hov-bx-h2-tg2">
+                                <h3 class="clickable">Pathn Road Aurangabadh</h3>
+                            </a></li>
+                    </ul>
+                    <ul>
+                        <li><a class="clickable" href="project.html#hov-bx-h2-tg2">
+                                <h3 class="clickable">LTT STATION BUILDING COMPLEX</h3>
+                            </a></li>
+                    </ul>
+                    <ul>
+                        <li><a class="clickable" href="project.html#hov-bx-h2-tg2">
+                                <h3 class="clickable">Four Lanning SH-24 SH-198</h3>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <h2 class="ft-details">Ongoing Project's</h2>
+            <div class="partition">
+                <div class="sub-partition-1">
+                    <ul>
+                        <li><a class="clickable" href="project.html#hov-bx-h2-tg">
+                                <h3 class="clickable">Project Ludhiyana</h3>
+                            </a></li>
+                    </ul>
+                    <ul>
+                        <li><a class="clickable" href="project.html#hov-bx-h2-tg">
+                                <h3 class="clickable">Project Lokmanya Tilak Terminus for Better Connectivity</h3>
+                            </a></li>
+                    </ul>
+                    <ul>
+                        <li><a class="clickable" href="project.html#hov-bx-h2-tg2">
+                                <h3 class="clickable">Trichy-Madurai Highway</h3>
+                            </a></li>
+                    </ul>
+                    <ul>
+                        <li><a class="clickable" href="project.html#hov-bx-h2-tg2">
+                                <h3 class="clickable">NH-06 Amravati - Chikli</h3>
+                            </a></li>
+                    </ul>
+                    <ul>
+                        <li><a class="clickable" href="project.html#hov-bx-h2-tg2">
+                                <h3 class="clickable">Sewage facilities for Bhivandi - Nizampur City</h3>
+                            </a></li>
+                    </ul>
+                    <ul>
+                        <li><a class="clickable" href="project.html#hov-bx-h2-tg2">
+                                <h3 class="clickable">Four Lanning Parshuram Ghat</h3>
+                            </a></li>
+                    </ul>
+                    <ul>
+                        <li><a class="clickable" href="project.html#hov-bx-h2-tg2">
+                                <h3 class="clickable">Water Supply Facilities - Shelgaon</h3>
+                            </a></li>
+                    </ul>
+                    <ul>
+                        <li><a class="clickable" href="project.html#hov-bx-h2-tg2">
+                                <h3 class="clickable">Water Supply Facilities - Sangli</h3>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ft-details" id="connect">Connect With Us
+                <h2>Eagle Infra India Limited </h2>
+                <p class="ft-p">Eagle Nest, Block no 758, Behind Chopra Court, Gol Maiden Rd, Ulhasnagar,
+                    Maharashtra
+                    421003 </p>
+                <a href="mailto: supporteagle@eagleinfra.com">
+                    <h4 class="e-pt">supporteagle@eagleinfra.com</h4>
+                </a>
+                <a href="tel:+918899774422">
+                    <h4 class="m-pt">+91 8899774422</h4>
+                </a>
+                <div class="rights-policies">
+                    <img id="eill-logo" src="img/logo-removebg-preview1.png" alt="Eagle Infra Limited Logo">
+                    <h5 class="cp-ryt">COPYRIGHT © 2025 Eagle Infra India Limited</h5>
+                    <div class="cp-ryt"><a href="#">PRIVACY POLICY</a></div>
+                </div>
+            </div>
+            <div id="futurecode"></div>
+        </div>
+    </div>
+    <!-- ABOUT US MAIN CONTENT STARTS-->
+    <div class="projectswrapper">
+        <!-- <img id="abus-sl-img" src="img/img6.webp" alt=""> -->
+        <div class="overlay-h2-tg">
+            <h2 id="ovrly-h2">Verticals | </h2>
+
+            <div class="text-container">
+                <h2 class="text-slide active ">Road Projects</h2>
+                <h2 class="text-slide ">Water Projects</h2>
+                <h2 class="text-slide">Metro Projects</h2>
+            </div>
+        </div>
+
+        <div id="fadeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5200">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Paithan Road (2).webp" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/bhiwandi3 (2).jpg" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/metro.webp" class="d-block w-100" alt="Slide 3">
+                </div>
+            </div>
+        </div>
+    </div>
+            <h1 id="ab-sd-tx-htg">Engineering Landmarks</h1>
+
+    <div class="project-pane" id="projectpane">
+
+        <div class="filters" >
+            <div class="filter-buttons">
+                <h2>Filters</h2>
+                <button class="bt-p" onclick="filterCards('highway'); setActive(this)">Highways</button>
+                <button class="bt-p" onclick="filterCards('infra'); setActive(this)">Infrastructure</button>
+                <button class="bt-p" onclick="filterCards('tollplaza'); setActive(this)">Toll Plaza</button>
+                <button class="bt-p" onclick="filterCards('water'); setActive(this)">Water & Sewage Treatment</button>
+                <button class="bt-p" onclick="filterCards('all'); setActive(this)">Clear Filters</button>
+            </div>
+        </div>
+        <div id="card-Container">
+            <div class="card-box" data-category="infra">
+                <img class="image-adjust" id="ld-lu" src="img/kolhapur-eagle-pride-commercial-complex-big (2).jpg"
+                    alt="">
+                <div class="partition">
+                    <h2 class="hov-bx-h2-tg">Eagle's Pride, Commercial Complex, Kolhapur</h2>
+                    <h3 class="hov-bx-h3-tg">A Modern Business Hub Designed for Growth and Accessibility</h3>
+                    <p class="hov-bx-p-tg">Eagle’s Pride in Kolhapur stands as a benchmark in commercial development,
+                        blending strategic location with functional design. Our expertise ensured a seamless execution,
+                        offering scalable business spaces that support local enterprise and contribute to Kolhapur’s
+                        evolving urban economy.</p>
+                    <a href="#"> <button class="card-button">Read More</button></a>
+                </div>
+            </div>
+            <div class="card-box" data-category="highway">
+                <img class="image-adjust" id="ld-lu" src="img/ludiana-ladhowal.webp" alt="">
+                <div class="partition">
+                    <h2 class="hov-bx-h2-tg">Ludhiyana-Ladhowal</h2>
+                    <h3 class="hov-bx-h3-tg">Enhancing Connectivity in Ludhiana</h3>
+                    <p class="hov-bx-p-tg">The Laddowal Bypass project in Ludhiana, Punjab, spans 17.041 km, enhancing
+                        connectivity between NH-95 and NH-1 via the Laddowal Seed Farm. Developed under the Hybrid
+                        Annuity
+                        Model, it improves traffic flow and infrastructure. </p>
+                    <a href="#"> <button class="card-button">Read More</button></a>
+                </div>
+            </div>
+            <div class="card-box" data-category="highway">
+                <img class="image-adjust" src="img/Trichay-Madhurai.webp" alt="">
+                <div class="partition">
+                    <h2 class="hov-bx-h2-tg">Trichy-Madurai Highway</h2>
+                    <h3 class="hov-bx-h3-tg">Ensuring Smooth Connectivity & Road Safety on NH-45B</h3>
+                    <p class="hov-bx-p-tg">The operation and maintenance of the Trichy Bypass to Tovaramkurchi-Madurai
+                        section
+                        of
+                        NH-45B focus on enhancing road quality, safety, and traffic efficiency. Managed under the OMT
+                        (Operate,
+                        Maintain, Transfer) model, this project ensures seamless travel and long-term infrastructure
+                        sustainability.</p>
+                    <a href="#"> <button class="card-button">Read More</button></a>
+                </div>
+            </div>
+            <div class="card-box" data-category="highway">
+                <img class="image-adjust" src="img/Shegaon-Road01 (2).jpg" alt="">
+                <div class="partition">
+                    <h2 class="hov-bx-h2-tg">State Highway, Shegaon, Maharashtra</h2>
+                    <h3 class="hov-bx-h3-tg">Upgrading Regional Mobility with Durable Road Infrastructure</h3>
+                    <p class="hov-bx-p-tg">Our development of the State Highway in Shegaon demonstrates technical
+                        precision and deep regional insight. This project enhances road safety, reduces travel time, and
+                        fosters economic connectivity—supporting Maharashtra's vision for robust, future-ready
+                        transportation infrastructure in emerging towns.</p>
+                    <a href="#"> <button class="card-button">Read More</button></a>
+                </div>
+            </div>
+            <div class="card-box" data-category="infra">
+                <img class="image-adjust" src="img/ltt-terminus-big.jpg" alt="">
+                <div class="partition">
+                    <h2 class="hov-bx-h2-tg">LTT Station: Building Complex Kurla</h2>
+                    <h3 class="hov-bx-h3-tg">LTT Station, Kurla Building Complex Development</h3>
+                    <p class="hov-bx-p-tg">With a strong commitment to excellence in infrastructure, we successfully
+                        contributed to the development surrounding LTT Station through the Kurla Building Complex
+                        project. Designed with safety, accessibility, and urban efficiency in mind, this initiative
+                        reflects our expertise in delivering high-impact civil infrastructure aligned with national
+                        connectivity goals.</p>
+                    <a href="#"> <button class="card-button">Read More</button></a>
+                </div>
+            </div>
+            <div class="card-box" data-category="infra">
+                <img class="image-adjust" src="img/Raipur Parks (3).jpeg" alt="">
+                <div class="partition">
+                    <h2 class="hov-bx-h2-tg">Raipur Park Central Park</h2>
+                    <h3 class="hov-bx-h3-tg">Enhancing Urban Livability with Nature-Focused Public Spaces</h3>
+                    <p class="hov-bx-p-tg">Developed in the heart of Raipur, Central Park stands as a testament to our
+                        expertise in creating green urban spaces. This project promotes environmental harmony, public
+                        wellness, and sustainable urban development, aligned with Chhattisgarhs vision for modern
+                        infrastructure.</p>
+                    <a href="#"> <button class="card-button">Read More</button></a>
+                </div>
+            </div>
+            <div class="card-box" data-category="highway">
+                <img class="image-adjust" src="img/Paithan Road (2).webp" alt="">
+                <div class="partition">
+                    <h2 class="hov-bx-h2-tg">Pathan Road, Sambhajinagar</h2>
+                    <h3 class="hov-bx-h3-tg">Decongesting City Traffic and Streamlining Regional Flow</h3>
+                    <p class="hov-bx-p-tg">Pathan Road is a vital infrastructure solution that redirects heavy traffic
+                        from the city center. Engineered with modern alignment and safety features, the project enables
+                        smooth transit, eases congestion, and exemplifies Eagle Infras trusted urban highway design
+                        capabilities.</p>
+                    <a href="#"> <button class="card-button">Read More</button></a>
+                </div>
+            </div>
+            <div class="card-box" data-category="highway">
+                <img class="image-adjust" src="img/khamgaon-bot-big (2).jpg" alt="">
+                <div class="partition">
+                    <h2 class="hov-bx-h2-tg">Khamgaon Bypass Highway</h2>
+                    <h3 class="hov-bx-h3-tg">Decongesting City Traffic and Streamlining Regional Flow</h3>
+                    <p class="hov-bx-p-tg">The Khamgaon Bypass is a vital infrastructure solution that redirects heavy
+                        traffic from the city center. Engineered with modern alignment and safety features, the project
+                        enables smooth transit, eases congestion, and exemplifies Eagle Infras trusted urban highway
+                        design capabilities.</p>
+                    <a href="#"> <button class="card-button">Read More</button></a>
+                </div>
+            </div>
+            <div class="card-box" data-category="highway">
+                <img class="image-adjust" src="img/" alt="">
+                <div class="partition">
+                    <h2 class="hov-bx-h2-tg">Vitva Bhusaval Khamgaon SH-44 Corridor</h2>
+                    <h3 class="hov-bx-h3-tg">Strategic Road Enhancement Connecting Maharashtra's Trade Network</h3>
+                    <p class="hov-bx-p-tg">The SH-44 project connects Vitva, Bhusaval, Jamner, Motala, Pimpalgaon Raja,
+                        and Khamgaon. Designed for better logistics and regional access, Eagle Infra executed this
+                        critical highway stretch under high-compliance models, improving connectivity and empowering
+                        inter-district commerce across Maharashtra.</p>
+                    <a href="#"> <button class="card-button">Read More</button></a>
+                </div>
+            </div>
+            <div class="card-box" data-category="tollplaza">
+                <img class="image-adjust" src="img/Jam Warora (2).jpg" alt="">
+                <div class="partition">
+                    <h2 class="hov-bx-h2-tg">BOT At Jam To Warora,Chandrapur</h2>
+                    <h3 class="hov-bx-h3-tg">Efficient Toll Infrastructure Enabling Seamless Regional Connectivity</h3>
+                    <p class="hov-bx-p-tg">The toll plaza developed under the BOT model between Jam and Warora reflects
+                        our engineering efficiency and financial expertise. Strategically executed to streamline traffic
+                        flow, it supports economic activity and ensures long-term, self-sustained infrastructure in
+                        Chandrapur district.</p>
+                    <a href="#"> <button class="card-button">Read More</button></a>
+                </div>
+            </div>
+            <div class="card-box" data-category="tollplaza">
+                <img class="image-adjust" src="img/Chittampati 2.JPG" alt="">
+                <div class="partition">
+                    <h2 class="hov-bx-h2-tg">Chittampatti Toll Plaza, Tamil Nadu</h2>
+                    <h3 class="hov-bx-h3-tg">Smart Toll Management for Safer, Faster Commutes in Tamil Nadu</h3>
+                    <p class="hov-bx-p-tg">The Chittampatti Toll Plaza showcases our proficiency in modern toll
+                        infrastructure, designed to reduce congestion and enhance safety on key Tamil Nadu routes. Built
+                        to national standards, it ensures efficient traffic regulation and long-term revenue
+                        sustainability for regional development.</p>
+                    <a href="#"> <button class="card-button">Read More</button></a>
+                </div>
+            </div>
+            <div class="card-box" data-category="tollplaza">
+                <img class="image-adjust" src="img/Patancheru 2 (2).jpg" alt="">
+                <div class="partition">
+                    <h2 class="hov-bx-h2-tg">Patancheru Toll Plaza, Telangana</h2>
+                    <h3 class="hov-bx-h3-tg">Streamlining Highway Access Through Smart Tolling Solutions</h3>
+                    <p class="hov-bx-p-tg">The Chittampatti Toll Plaza showcases our proficiency in modern toll
+                        infrastructure, designed to reduce congestion and enhance safety on key Tamil Nadu routes. Built
+                        to national standards, it ensures efficient traffic regulation and long-term revenue
+                        sustainability for regional development.</p>
+                    <a href="#"> <button class="card-button">Read More</button></a>
+                </div>
+            </div>
+            <div class="card-box" data-category="infra">
+                <img class="image-adjust" src="img/" alt="">
+                <div class="partition">
+                    <h2 class="hov-bx-h2-tg">Shopping Centre, Ahmednagar, Maharashtra</h2>
+                    <h3 class="hov-bx-h3-tg">A Contemporary Retail Space Built for Community and Commerce</h3>
+                    <p class="hov-bx-p-tg">The Shopping Centre in Ahmednagar reflects our expertise in urban commercial
+                        infrastructure. Designed for accessibility and functionality, it fosters local business growth,
+                        enhances consumer experience, and contributes to the city's economic development through
+                        thoughtfully executed retail architecture.</p>
+                    <a href="#"> <button class="card-button">Read More</button></a>
+                </div>
+            </div>
+            <div class="card-box" data-category="infra">
+                <img class="image-adjust" src="img/jalgaon01 (2).jpg" alt="">
+                <div class="partition">
+                    <h2 class="hov-bx-h2-tg">North Maharashtra University, Jalgaon, Maharashtra</h2>
+                    <h3 class="hov-bx-h3-tg">Empowering Education Through Purpose-Built Institutional Infrastructure</h3>
+                    <p class="hov-bx-p-tg">Our development at North Maharashtra University demonstrates our commitment to building educational excellence. With a focus on structural integrity, student accessibility, and future-ready facilities, the project supports academic growth and regional advancement in Jalgaon, Maharashtra.</p>
+                    <a href="#"> <button class="card-button">Read More</button></a>
+                </div>
+            </div>
+            <div class="card-box" data-category="infra">
+                <img class="image-adjust" src="img/anti-corruption-bureao-big (2).jpg" alt="">
+                <div class="partition">
+                    <h2 class="hov-bx-h2-tg">Anti-Corruption Bureau Facility</h2>
+                    <h3 class="hov-bx-h3-tg">Securing Institutional Integrity Through Specialized Infrastructure</h3>
+                    <p class="hov-bx-p-tg">We delivered a purpose-built facility for the Anti-Corruption Bureau, designed with security, efficiency, and confidentiality in mind. This project reflects our capability to support sensitive government operations through reliable, high-standard infrastructure aligned with institutional needs.</p>
+                    <a href="#"> <button class="card-button">Read More</button></a>
+                </div>
+            </div>
+            <div class="card-box" data-category="infra">
+                <img class="image-adjust" src="img/conference-hall-big (2).jpg" alt="">
+                <div class="partition">
+                    <h2 class="hov-bx-h2-tg">Conference Hall </h2>
+                    <h3 class="hov-bx-h3-tg">A Modern Venue Designed for Dialogue, Collaboration, and Strategy</h3>
+                    <p class="hov-bx-p-tg">Our conference hall project reflects expertise in delivering acoustically optimized, tech-enabled environments. Built to host official meetings, seminars, and strategic discussions, it ensures comfort, functionality, and professionalism—meeting the evolving needs of modern institutional and corporate gatherings.</p>
+                    <a href="#"> <button class="card-button">Read More</button></a>
+                </div>
+            </div>
+            <div class="card-box" data-category="infra">
+                <img class="image-adjust" src="img/pcmc-768x576.jpg" alt="">
+                <div class="partition">
+                    <h2 class="hov-bx-h2-tg">Pimpri Chinchwad Municipal Corporation, Pune</h2>
+                    <h3 class="hov-bx-h3-tg">Strengthening Civic Governance Through Purposeful Infrastructure</h3>
+                    <p class="hov-bx-p-tg">We contributed to the development of infrastructure for the Pimpri Chinchwad Municipal Corporation, reflecting our experience in building civic assets. Designed for operational efficiency and public service delivery, the project supports Pune’s expanding urban governance and administrative functions.</p>
+                    <a href="#"> <button class="card-button">Read More</button></a>
+                </div>
+            </div>
+            <div class="card-box" data-category="infra">
+                <img class="image-adjust" src="img/pwd-nashik1-big (2).jpg" alt="">
+                <div class="partition">
+                    <h2 class="hov-bx-h2-tg">Building Institutional Spaces that Promote Equity and Inclusion</h2>
+                    <h3 class="hov-bx-h3-tg">Building Institutional Spaces that Promote Equity and Inclusion</h3>
+                    <p class="hov-bx-p-tg">The facility for the Social Justice Department in Adgaon, Nashik was developed with a focus on dignity, accessibility, and administrative efficiency. It underscores our commitment to supporting government initiatives aimed at fostering social equity through reliable and inclusive infrastructure.</p>
+                    <a href="#"> <button class="card-button">Read More</button></a>
+                </div>
+            </div>
+            <div class="card-box" data-category="infra">
+                <img class="image-adjust" src="img/msphwcl-aurangabad3-big (2).jpg" alt="">
+                <div class="partition">
+                    <h2 class="hov-bx-h2-tg">India Reserve Battalion (IRB) Head Quarters, Aurangabad, Maharashtra </h2>
+                    <h3 class="hov-bx-h3-tg">Robust Infrastructure Supporting Operational Readiness and National Security</h3>
+                    <p class="hov-bx-p-tg">The IRB Headquarters in Aurangabad was developed to meet the operational demands of India's reserve forces. Engineered for resilience, security, and functionality, this facility reflects our expertise in delivering mission-critical infrastructure for law enforcement and national safety</p>
+                    <a href="#"> <button class="card-button">Read More</button></a>
+                </div>
+            </div>
+            <div class="card-box" data-category="water">
+                <img class="image-adjust" src="img/bhiwandi3 (2).jpg" alt="">
+                <div class="partition">
+                    <h2 class="hov-bx-h2-tg">Sewage Treatment Plant, Bhiwandi, Mumbai </h2>
+                    <h3 class="hov-bx-h3-tg">Advancing Urban Sanitation Through Sustainable Water Management</h3>
+                    <p class="hov-bx-p-tg">Our Sewage Treatment Plant project in Bhiwandi, Mumbai, highlights our commitment to environmental sustainability. Designed for high-capacity waste processing and compliance with urban sanitation standards, it supports cleaner ecosystems and healthier communities through efficient wastewater management.</p>
+                    <a href="#"> <button class="card-button">Read More</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- FOTTER CODE STARTS -->
+  
+ <!-- FOTTER CODE ENDS  -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="test.js"></script>
+
+
+
+<!-- <script>
+    const obj = document.querySelectorAll('#ab-sd-tx-htg');
+    const obj1 = document.querySelectorAll('.projects-container');
+
+    const ob = new IntersectionObserver(entries => {
+        entries.forEach(entries => {
+            if (entries.isIntersecting) {
+                entries.target.classList.add('show');
+            }
+        });
+    }, { threshold: 0.5 });
+    obj.forEach(text => ob.observe(text));
+    obj1.forEach(text => ob.observe(text));
+
+</script> -->
+<script>
+    window.onload = function () {
+        let currentSlide = 0;
+        const textSlides = document.querySelectorAll(".text-slide");
+        const textSlider = document.querySelector("#textSlider");
+        const carouselElement = document.querySelector("#fadeCarousel");
+        const carousel = new bootstrap.Carousel(carouselElement, {
+            interval: 5200, // Ensure sync with text slider
+            ride: "carousel",
+            pause: false // 
+        });
+
+        let slideInterval;
+
+        function changeSlide(index) {
+            textSlides[currentSlide].classList.remove("active");
+            textSlides[index].classList.add("active");
+            currentSlide = index;
+        }
+
+        function autoSlide() {
+            let nextSlide = (currentSlide + 1) % textSlides.length;
+            changeSlide(nextSlide);
+        }
+
+        function startAutoSlide() {
+            slideInterval = setInterval(autoSlide, 5300);
+        }
+
+        function stopAutoSlide() {
+            clearInterval(slideInterval);
+        }
+
+        // Start synchronized auto-slide
+        startAutoSlide();
+
+
+        carouselElement.addEventListener("mouseenter", function () {
+            carousel.cycle(); // Keep carousel running
+        });
+
+
+        textSlider.addEventListener("mouseenter", stopAutoSlide);
+        textSlider.addEventListener("mouseleave", startAutoSlide);
+    };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</html>

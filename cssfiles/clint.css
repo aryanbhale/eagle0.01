@@ -1,0 +1,392 @@
+html,
+body {
+    width: auto;
+    height: auto;
+
+}
+
+.clientswrapper {
+    width: 100%;
+    height: 100%;
+
+}
+
+.clients-div {
+    width: 100%;
+    height: 45%;
+}
+
+.cl-ld-pg {
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    width: 100%;
+}
+
+#cl-ld-pg-h-tg {
+    margin: 7% 0 0 0;
+    text-align: center;
+    color: #1A237E;
+    text-shadow: 0px 0px 5px #ffffff;
+    font-size: 90px;
+    font-weight: 700;
+    font-family: "KUMBH SANS";
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.9s ease, transform 0.6s ease;
+
+}
+
+#cl-ld-pg-h-tg.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#cl-ld-pg-h5-tg {
+    font-weight: 600;
+    font-size: 17px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.9s ease, transform 1.1s ease;
+
+}
+
+#cl-ld-pg-h5-tg.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sub-info-box {
+    display: flex;
+    flex-direction: row;
+    height: 20.5rem;
+    width: 100%;
+    background-color: #b6d8ff;
+
+}
+
+.sub-info-box-1 {
+    padding: 4% 0 0 2%;
+    font-family: "KUMBH SANS";
+    justify-content: center;
+    opacity: 0;
+    transform: translateX(-50px);
+    /* transform: translateY(50px); */
+    transition: opacity 0.9s ease, transform 1.1s ease;
+
+}
+
+.sub-info-box-1.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sub-info-box-2 {
+    padding: 6% 2% 0 0;
+    width: 50%;
+    font-family: "KUMBH SANS";
+    font-weight: 600;
+    text-align: justify;
+    opacity: 0;
+    transform: translateX(50px);
+    /* transform: translateY(50px); */
+    transition: opacity 0.9s ease, transform 1.1s ease;
+
+}
+
+.sub-info-box-2.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.card-row {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /* transform: translateX(50px); */
+    transform: translateY(50px);
+    transition: opacity 0.9s ease, transform 1.1s ease;
+
+}
+
+.cards.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cards-2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /* transform: translateX(50px); */
+    transform: translateY(50px);
+    transition: opacity 0.9s ease, transform 1.1s ease;
+
+}
+
+.cards-2.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.c1 {
+    height: 100%;
+    width: 26%;
+    margin: 3% 1% 0 1%;
+    background-color: #ffffff;
+    box-shadow: 0 0 4px black;
+    border-radius: 0 10% 10% 10%;
+    text-align: left;
+    overflow: hidden;
+
+}
+
+.c1:hover {
+    transform: scale(1.02);
+    border-radius: 10% 10% 0% 10%;
+    transition: 0.4s;
+    background-color: #b6d8ff;
+}
+
+#img-c1 {
+    display: block;
+    /* image-resolution: 220px 220px; */
+    border-radius: 0 10% 0% 0%;
+    display: flex;
+    height: 220px;
+    width: 355px;
+}
+
+#img-c1:hover {
+    transform: scale(1.00);
+    border-radius: 10% 10% 0% 0%;
+    transition: 0.4s;
+    background-color: #b6d8ff;
+
+}
+
+.c2 {
+    height: 100%;
+    width: 26%;
+    margin: 3% 1% 3% 1%;
+    background-color: #ffffff;
+    box-shadow: 0 0 4px black;
+    border-radius: 10% 10% 0% 10%;
+    text-align: left;
+}
+
+.c2:hover {
+    transform: scale(1.02);
+    border-radius: 10% 0 10% 10%;
+    transition: 0.4s;
+    background-color: #b6d8ff;
+}
+
+#img-c2 {
+    border-radius: 10% 10% 0% 0%;
+    display: flex; 
+    height: 220px;
+    width: 355px;
+}
+
+#img-c2:hover {
+    transform: scale(1.00);
+    border-radius: 10% 0% 0% 0%;
+    transition: 0.4s;
+    background-color: #b6d8ff;
+
+}
+
+#head-sm {
+    margin: 2% 0 0 0;
+}
+
+.tx-para {
+    margin: 0 0 0 2%;
+    text-align: justify;
+    width: 90%;
+    font-family: "Kumbh SANS";
+}
+
+.m-vision {
+    display: none;
+}
+.clientswrapper{
+    display: block;
+}
+
+@media screen and (max-width: 700px) {
+
+    .clientswrapper {
+        display: none;
+    }
+
+    .m-vision {
+        display: block;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .cl-ld-pg-h-tg {
+        margin: 7% 0 0 0;
+        text-align: center;
+        color: #1A237E;
+        text-shadow: 0px 0px 5px #ffffff;
+        font-size: 90px;
+        font-weight: 700;
+        font-family: "KUMBH SANS";
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.9s ease, transform 0.6s ease;
+    }
+
+    #cl-ld-pg-h5-tg1 {
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .sub-banner {
+        display: flex;
+        background-color: #b6d8ff;
+        height: 55%;
+    }
+
+    .sub-banner-p1 {
+        padding: 10% 3.5% 0 2%;
+    }
+
+    .sub-banner-p2 {
+        text-align: justify;
+        padding: 2% 3% 0 0;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    #tx-l1 {
+        margin: 0 0 30% 0;
+    }
+
+    .sub-banner-para {
+        overflow: hidden;
+    }
+
+    .infoheads {
+        margin: 5% 0 5% 2%;
+        font-family: "FIRA SANS";
+        font-size: 38px;
+        width: fit-content;
+        font-weight: 700;
+    }
+
+    .info-cards {
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 16%;
+    }
+
+    .cards-box {
+        margin: 0 0 0 2%;
+        height: 68%;
+        box-shadow: 0 0 3px black;
+        border-radius: 10% 0 0 0;
+
+        width: 95%;
+
+    }
+
+    .imagecard {
+        border-radius: 10% 0 0 0;
+    }
+
+    .card-img {
+        display: block;
+        height: 48%;
+        border-radius: 10% 0 0 0;
+    }
+
+    .btm-info-heads {
+        font-weight: 600;
+        font-family: "KUMBH SANS";
+        font-size: 35px;
+        padding: 3% 0 1% 1%;
+    }
+
+    .btm-info-sbh {
+        font-family: "KUMBH SANS";
+        font-size: 21px;
+        padding: 0 0 1% 1%;
+    }
+
+    .btm-info-p {
+        font-size: 18px;
+        font-family: "KUMBH SANS";
+        padding: 0 0 1% 1%;
+
+    }
+.c1{
+    height: 100%;
+    width: 95%;
+    margin: 8% 5% 3% 6%;
+    background-color: #ffffff;
+    box-shadow: 0 0 4px black;
+    border-radius: 0 10% 3% 3%;
+
+}
+.c2 {
+   
+    height: 100%;
+    width: 95%;
+    margin: 8% 1% 3% 1%;
+    background-color: #ffffff;
+    box-shadow: 0 0 4px black;
+    border-radius: 10% 10% 0% 0%;
+}
+#img-c1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* image-resolution: 220px 220px; */
+    border-radius: 0 10% 0% 0%;
+    display: flex;
+    height: 220px;
+    width: 411px;
+}
+#img-c2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* image-resolution: 220px 220px; */
+    border-radius: 0 10% 0% 0%;
+    display: flex;
+    height: 220px;
+        width: 411px;
+}
+#ourclients{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#m-st-heads2
+{       font-family: "kumbh sans";
+        font-weight: 1000;
+        font-size: 63px;
+        margin-left: 5%;
+    }
+
+}
